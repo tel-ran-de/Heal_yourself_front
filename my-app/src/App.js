@@ -1,12 +1,8 @@
-import './App.css';
 import Layout from "./components/Layout";
 import './styles.css';
 import { Routes, Route } from 'react-router-dom' 
-import QuestionPage from './pages/QuestionsPage';
+import QuestionPage from './pages/QuestionPage';
 import AnswersPage from './pages/AnswersPage';
-
-
-
 
 function App() {
   return (
