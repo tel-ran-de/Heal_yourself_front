@@ -10,7 +10,7 @@ export default function ResultsPage() {
 		<p>Meet your treatment buddies:</p>
 
 		<div className = {styles.treatments}>
-			<p>Story 1...</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, delectus?</p>
 
 			<div className = {styles.actions_btns}>
 				<button>Comment</button>
