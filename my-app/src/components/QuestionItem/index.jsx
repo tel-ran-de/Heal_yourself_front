@@ -23,7 +23,6 @@ export default function QuestionItem({
     console.log('log', event.currentTarget.name)
     dispatch(getAnswerAction(stateAnswers[id] = event.currentTarget.value));
 
-    setSelectedValue(event.currentTarget.value); 
   };
 
   return (

@@ -66,7 +66,7 @@ export default function SubmitPage() {
   const weightRegister = register("weight", {
     required: "*The field is required",
     pattern: {
-      value: /^\d{2,3}( ?kg)?$/,
+      value: /^\d{2,3}( ?kg)?$/, 
       message: "*Not valid format",
     },
   });
@@ -114,7 +114,7 @@ export default function SubmitPage() {
           </label>
           <label>
             <p>Weight</p>
-            <p className={style.descr}>From 10kg</p>
+            <p className={style.descr}>From 5kg</p>
             <input
               type="number"
               name="weight"
@@ -180,3 +180,13 @@ export default function SubmitPage() {
     </div>
   );
 }
+
+
+
+// const weightRegister = register("weight", {
+//   required: "*The field is required",
+//   pattern: {
+//     value: /^5\d{1,2}( ?kg)?$/, 
+//     message: "*Not valid format",
+//   },
+// });
