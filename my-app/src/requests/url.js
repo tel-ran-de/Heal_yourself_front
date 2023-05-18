@@ -1,0 +1,1 @@
+export const url = 'http://ok-treatments.eu-central-1.elasticbeanstalk.com'

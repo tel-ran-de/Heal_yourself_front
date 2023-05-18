@@ -12,6 +12,7 @@ import SmileImg from '../../components/SmileImg';
 import TherapyTag from '../../components/TherapyTag';
 import BMIBlock from '../../components/BMIBlock';
 import style from "./index.module.css";
+import { url } from '../../requests/url';
 
 export default function SubmitPage() {
   const dispatch = useDispatch();
@@ -53,7 +54,7 @@ export default function SubmitPage() {
       }
     );
 
-    dispatch(sendAnswers("http://localhost:8080/story", allAnswers));
+    dispatch(sendAnswers(`${url}/story`, allAnswers));
 
     navigate("/results");
     reset();

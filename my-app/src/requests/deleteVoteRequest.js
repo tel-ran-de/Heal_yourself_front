@@ -1,9 +1,10 @@
 import { deleteVoteAction } from "../store/actions/deleteVoteAction";
+import { url } from './url';
 
 export const deleteVote = ( id ) => {
    
     return dispatch => {
-        fetch( `http://localhost:8080/story/vote/${id}`, {
+        fetch( `${url}/story/vote/${id}`, {
             headers: {
                 accept: "application/json",
                 'Content-Type': 'application/json'
