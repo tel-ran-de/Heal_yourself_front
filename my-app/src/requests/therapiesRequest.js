@@ -1,6 +1,6 @@
-const url = "http://localhost:8080/therapy/"
+import { url } from './url';
 export const sendTherapies = (storyId, body) => {
-    fetch(`${url}/${storyId}`, {
+    fetch(`${url}/therapy/${storyId}`, {
       headers: {
         accept: "application/json",
         "Content-Type": "application/json",

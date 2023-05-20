@@ -1,9 +1,9 @@
 import { sendCommentAction } from "../store/actions/sendCommentAction";
-
+import { url } from './url';
 export const sendComment = (id, comment) => {
     const data = { storyId: id, comment: comment }
     return dispatch => {
-        fetch( `http://localhost:8080/story/comment/${id}?comment=${comment}`, {
+        fetch( `${url}/story/comment/${id}?comment=${comment}`, {
             headers: {
                 accept: "application/json",
                 'Content-Type': 'application/json'
